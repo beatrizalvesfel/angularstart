@@ -4,3 +4,8 @@
   <span>{{ shipping.type }}</span>
   <span>{{ shipping.price | currency }}</span>
 </div>
+
+<div class="shipping-item" *ngFor="let d of dados">
+  <span>{{ d.type }}</span>
+  <span>{{ d.price | currency }}</span>
+</div>

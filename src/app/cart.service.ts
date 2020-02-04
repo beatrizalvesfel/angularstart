@@ -31,6 +31,9 @@ export class CartService {
   }
 
   getShippingPrices() {
+    return this.http.get('http://localhost:3000/products');
+  }
+  _getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
 }
